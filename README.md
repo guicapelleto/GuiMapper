@@ -1,3 +1,5 @@
+<img width="831" alt="Captura de Tela 2024-02-07 às 11 25 54" src="https://github.com/guicapelleto/GuiMapper/assets/125845072/c167ee91-20bd-40ed-afa6-3fbe91f65838">
+
 GuiMapper - 1.1
 
 Criei esse script como forma de estudo e por praticidade de saber o que se está executando exatamente.
@@ -5,19 +7,7 @@ Futuras atualizações contará com multithread para acelerar o processo de scan
 
 HPING3 e ARPING são necessários para execução do script.
 
-
-   ____       _ __  __                             
-  / ___|_   _(_)  \/  | __ _ _ __  _ __   ___ _ __ 
- | |  _| | | | | |\/| |/ _` | '_ \| '_ \ / _ \ '__|
- | |_| | |_| | | |  | | (_| | |_) | |_) |  __/ |   
-  \____|\__,_|_|_|  |_|\__,_| .__/| .__/ \___|_|   
-                            |_|   |_|              
-
-version:1.1
-by:guicapelleto
-
 Modo de uso:
-
 python [modo] [host] [porta] [opções]
 
 -Faz varredura utilizando ping request nos ips 192.168.0.22 e no range 192.168.1.1 até 192.168.1.100
@@ -43,43 +33,9 @@ ARP (utiliza o protocolo ARP para realizar a consulta no host)
 -tempo (tempo entre as requisições, -tempo=3 espaça 3 segundos entre cada requisição)
 
 
-
 Necessário a execução com root.
 
 Exemplo de saída no terminal:
 
-(k311) ┌──(user㉿Kterminal)-[~/Documentos]
-└─$ sudo python guimapper.py -varredura -tipo=ARP -ip=172.19.12.40-50
 
-
-   ____       _ __  __                             
-  / ___|_   _(_)  \/  | __ _ _ __  _ __   ___ _ __ 
- | |  _| | | | | |\/| |/ _` | '_ \| '_ \ / _ \ '__|
- | |_| | |_| | | |  | | (_| | |_) | |_) |  __/ |   
-  \____|\__,_|_|_|  |_|\__,_| .__/| .__/ \___|_|   
-                            |_|   |_|              
-
-version:1.1
-by:guicapelleto
-
-Realizando varredura em 11 endereço(s)
-Varredura com protcolo ARP
-(11 / 11)
-
-
-
-********************
-ARP Scan:
-172.19.12.40
-172.19.12.41
-172.19.12.42
-172.19.12.43
-172.19.12.44
-172.19.12.45
-172.19.12.46
-172.19.12.47
-172.19.12.48
-172.19.12.49
-172.19.12.50
-
-
+<img width="635" alt="Captura de Tela 2024-02-07 às 11 25 00" src="https://github.com/guicapelleto/GuiMapper/assets/125845072/ce93ea4f-f0d9-49fa-85cb-1e886fc71969">
