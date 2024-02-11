@@ -1,6 +1,6 @@
 <img width="831" alt="Captura de Tela 2024-02-07 às 11 25 54" src="https://github.com/guicapelleto/GuiMapper/assets/125845072/c167ee91-20bd-40ed-afa6-3fbe91f65838">
 
-GuiMapper - 1.1
+GuiMapper - 1.2
 
 Criei esse script como forma de estudo e por praticidade de saber o que se está executando exatamente.
 Futuras atualizações contará com multithread para acelerar o processo de scanning, bem como implementar o módulo scapy para não depender de ferramentas terceiras como hping e arping.
