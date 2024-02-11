@@ -26,7 +26,7 @@ banner = '''
                             |_|   |_|              
 '''
 
-__version__ = 1.1
+__version__ = 1.2
 
 abertura = "\n%s\nversion:%s\nby:guicapelleto\n" % (banner,__version__)
 
@@ -100,15 +100,19 @@ class Mapper:
 
     def icmp_creation(self,host,timeout = 1):
         try:
-            icmp = subprocess.run('ping -c 1 -t %s %s' % (timeout, host),shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            self.report['ICMP'].append(host)
+            icmp = subprocess.run('ping -c 1 -w %s %s' % (timeout, host),shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            icmp = icmp.stdout + icmp.stderr
+            if 'icmp_seq=1' in icmp:
+                self.report['ICMP'].append(host)
         except:
             pass
 
     def arp_creation(self,host,timeout = 1):
         try:
             arp = subprocess.run('arping -c 1 -w %s %s' % (timeout,host),shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            self.report['ARP'].append(host)
+            arp = arp.stdout + arp.stderr
+            if 'index=' in arp:
+                self.report['ARP'].append(host)
         except:
             pass
 
